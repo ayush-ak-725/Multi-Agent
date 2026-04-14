@@ -53,3 +53,28 @@ TAVILY_API_KEY=...
 ```
 
 Note: A sample `.env` may already exist in the repo root. Keep secrets out of version control.
+
+Streamlit UI
+
+A Streamlit-based UI is included for a compact, single-file interface: `streamlit_app.py`.
+
+- Purpose: Provide a simple form to submit a research topic and render the pipeline outputs:
+  - Search Results -> `search_results`
+  - Scraped Content -> `scraped_content`
+  - Writer Report -> `report`
+  - Critic Feedback -> `feedback`
+
+How to run the Streamlit UI (local)
+
+1) Activate the `uv` virtual environment and install dependencies:
+
+```bash
+source uv/bin/activate
+pip install -r requirements.txt
+```
+
+2) Start the Streamlit app:
+
+```bash
+streamlit run streamlit_app.py
+```
