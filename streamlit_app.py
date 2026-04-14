@@ -17,4 +17,4 @@ if st.button("Run"):
     st.write(data["report"])
 
     st.write("### Critique")
-    st.write(data["critique"])
+    st.write(data["feedback"])
